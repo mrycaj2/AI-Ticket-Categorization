@@ -15,11 +15,14 @@ if not klucz:
 # nowe połączenie z Google Gemini przy użyciu nowego SDK
 client = genai.Client(api_key=klucz)
 
+# --- 2. PLIK BAZY DANYCH ---
+baza_file = "baza_ticketow.json"
+
 # --- 2. FUNKCJA KATEGORYZACJI ZGŁOSZENIA PRZY POMOCY AI ---
-def zapytaj_prawdziwe_ai_o_kategorie(tekst_uzytkownika):
+def zapytaj_ai_o_kategorie(tekst_uzytkownika):
     prompt = f"""
-    Jesteś analitykiem pierwszej linii wsparcia technicznego w sieci sklepów Żabka.
-    Franczyzobiorca zgłasza następujący problem: "{tekst_uzytkownika}"
+    Jesteś analitykiem pierwszej linii wsparcia technicznego w sieci sklepów.
+    Użytkownik zgłasza następujący problem: "{tekst_uzytkownika}"
     
     Twoim zadaniem jest skategoryzowanie tego problemu. 
     WYBIERZ JEDNĄ KATEGORIĘ GŁÓWNĄ Z TEJ LISTY:
@@ -75,16 +78,16 @@ def pobierz_nastepny_numer_zgloszenia(nazwa_pliku):
 
 # --- 4. START PROGRAMU ---
 print("--- INTELIGENTNY SYSTEM WSPARCIA ---")
-print ("Wpisz 'wyjscie', aby zakończyć program.")
-print("Opisz swój problem, a ja postaram się go rozwiązać lub utworzyć zgłoszenie do technika.")
-baza_file = "baza_ticketow.json"
+
 
 while True:
+    print ("Wpisz 'wyjscie', aby zakończyć program.")
+    print("Opisz swój problem, a ja postaram się go rozwiązać lub utworzyć zgłoszenie do technika.")
     problem = input("\nUżytkownik: ")
     if problem.lower() == 'wyjscie': break
 
     print("System: [Sztuczna Inteligencja analizuje zgłoszenie...]")
-    kategoria, podkategoria = zapytaj_prawdziwe_ai_o_kategorie(problem)
+    kategoria, podkategoria = zapytaj_ai_o_kategorie(problem)
     
     print(f"[AI rozpoznało: {kategoria} | {podkategoria}]")
     
@@ -130,3 +133,8 @@ while True:
         json.dump(baza, f, indent=4, ensure_ascii=False)
 
     print(f"System: GOTOWE! Twoje zgłoszenie to: {nr_sformatowany}")
+    print("Czy chcesz opisać kolejny problem? (tak / nie): ")
+    kontynuacja = input().lower()
+    if kontynuacja != "tak":
+        print("System: Dziękuję za skorzystanie z systemu wsparcia. Do zobaczenia!")
+        break

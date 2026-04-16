@@ -12,5 +12,33 @@
         "podkategoria": "Nie włącza się",
         "opis": "nic sie nie swieci na monitorze",
         "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00003",
+        "kategoria": "Sprzęt IT > Komputer Kasowy",
+        "podkategoria": "Nie włącza się",
+        "opis": "system nie startujer",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00004",
+        "kategoria": "Sprzęt IT > Komputer Kasowy",
+        "podkategoria": "Nie włącza się",
+        "opis": "brak zasilania",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00005",
+        "kategoria": "Inne",
+        "podkategoria": "Inne",
+        "opis": "nie ma obrazu na monitorze",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00006",
+        "kategoria": "Inne",
+        "podkategoria": "Inne",
+        "opis": "brak obrazu na monitorze",
+        "status": "OTWARTE"
     }
 ]
