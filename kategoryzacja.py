@@ -60,7 +60,7 @@ def zapytaj_prawdziwe_ai_o_kategorie(tekst_uzytkownika):
         print(f"[Błąd API: {e}]")
         return "Inne", "Inne"
 
-# --- 3. NUMERATOR ZGŁOSZEŃ (cw-0000X) ---
+# --- 3. NUMEROWANIE ZGŁOSZEŃ ---
 def pobierz_nastepny_numer_zgloszenia(nazwa_pliku):
     if not os.path.exists(nazwa_pliku):
         return 1
@@ -75,6 +75,8 @@ def pobierz_nastepny_numer_zgloszenia(nazwa_pliku):
 
 # --- 4. START PROGRAMU ---
 print("--- INTELIGENTNY SYSTEM WSPARCIA ---")
+print ("Wpisz 'wyjscie', aby zakończyć program.")
+print("Opisz swój problem, a ja postaram się go rozwiązać lub utworzyć zgłoszenie do technika.")
 baza_file = "baza_ticketow.json"
 
 while True:
