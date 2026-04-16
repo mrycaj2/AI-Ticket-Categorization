@@ -1,0 +1,65 @@
+[
+    {
+        "id_numer": "cw-00001",
+        "kategoria": "Inne",
+        "podkategoria": "Inne",
+        "opis": "nie dziala mi kasa",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00002",
+        "kategoria": "Sprzęt IT > Komputer Kasowy",
+        "podkategoria": "Nie włącza się",
+        "opis": "nie dziala mi kasa",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00003",
+        "kategoria": "Sieć > Switch Kasowy",
+        "podkategoria": "Brak internetu",
+        "opis": "nie mam internetu",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00004",
+        "kategoria": "Inne",
+        "podkategoria": "Inne",
+        "opis": "logistyka",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00005",
+        "kategoria": "Sprzęt IT > Komputer Kasowy",
+        "podkategoria": "Inne",
+        "opis": "nie dziala kaa",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00006",
+        "kategoria": "Sprzęt IT > Komputer Kasowy",
+        "podkategoria": "Inne",
+        "opis": "kasa nie dziala co mam zrobic",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00007",
+        "kategoria": "Sprzęt IT > Komputer Kasowy",
+        "podkategoria": "Inne",
+        "opis": "kasa nie dziala co mam zrobic",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00008",
+        "kategoria": "Sprzęt IT > Komputer Kasowy",
+        "podkategoria": "Inne",
+        "opis": "nie dziala kasa",
+        "status": "OTWARTE"
+    },
+    {
+        "id_numer": "cw-00009",
+        "kategoria": "Sprzęt IT > Komputer Kasowy",
+        "podkategoria": "Nie włącza się",
+        "opis": "nie dziala mi kasa",
+        "status": "OTWARTE"
+    }
+]
